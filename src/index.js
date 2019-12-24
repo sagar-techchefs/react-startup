@@ -24,7 +24,7 @@ import Contacts from "./components/Contacts";
 import notFound from "./components/notFound";
 import Comments from "./components/comments/Comments";
 import Seasons from "./components/seasons/Seasons";
-import ImangeSearch from "./components/imangeSearch/ImangeSearch";
+import ImageSearch from "./components/imageSearch/ImageSearch";
 import SongsList from "./components/songs/SongsList";
 import Insurance from "./components/insurance/Insurance";
 import Blog from "./components/blog/Blog";
@@ -67,10 +67,10 @@ const routing = (
 				</NavLink>
 				<NavLink
 					className="item"
-					to="/cars"
+					to="/imageSearch"
 					activeClassName="active"
 				>
-					Cars
+					ImageSearch
 				</NavLink>
 				<NavLink
 					className="item"
@@ -119,7 +119,7 @@ const routing = (
 				<Route path="/contacts" component={Contacts} />
 				<Route path="/comments" component={Comments} />
 				<Route path="/seasons" component={Seasons} />
-				<Route path="/cars" component={ImangeSearch} />
+				<Route path="/imageSearch" component={ImageSearch} />
 				<Route path="/songsList" component={SongsList} />
 				<Route path="/insurance" component={Insurance} />
 				<Route path="/blog" component={Blog} />
