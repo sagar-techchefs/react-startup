@@ -1,0 +1,46 @@
+{
+  "streams": [
+    {
+      "title": "another stream 2",
+      "description": "another grate stream 2",
+      "id": 1
+    },
+    {
+      "title": "another stream",
+      "description": "another grate stream",
+      "id": 2
+    },
+    {
+      "title": "1",
+      "description": "1",
+      "id": 3
+    },
+    {
+      "title": "2",
+      "description": "2",
+      "id": 4
+    },
+    {
+      "title": "3",
+      "description": "3",
+      "id": 5
+    },
+    {
+      "title": "4",
+      "description": "4",
+      "id": 6
+    },
+    {
+      "title": "Titles 1",
+      "description": "Descriptions 1",
+      "userId": "117945202766349026748",
+      "id": 7
+    },
+    {
+      "title": "Sixth Titles",
+      "description": "Sixth Descriptions",
+      "userId": "117945202766349026748",
+      "id": 8
+    }
+  ]
+}

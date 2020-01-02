@@ -1,8 +1,27 @@
 // importing named export use {}
 import { combineReducers } from "redux";
+import { reducer as formReducer } from "redux-form";
 
 import postsReducer from "./postsReducer";
 import userReducer from "./userReducer";
+import steamReducer from "./streamReducer";
+
+const authReducer = (auth = { isSignedIn: null, userId: null }, action) => {
+	switch (action.type) {
+		case "SIGN_IN":
+			return {
+				...auth,
+				isSignedIn: true,
+				userId: action.payload
+			};
+
+		case "SIGN_OUT":
+			return { ...auth, isSignedIn: false, userId: null };
+
+		default:
+			return auth;
+	}
+};
 
 const songsReducer = () => {
 	return [
@@ -52,11 +71,14 @@ const claimHistory = (claimHistoryList = [], action) => {
 };
 
 export default combineReducers({
+	form: formReducer,
+	auth: authReducer,
 	songs: songsReducer,
 	selectedSong: selectedSongReducer,
 	policies: policies,
 	account: account,
 	claimHistory: claimHistory,
 	blog: postsReducer,
-	users: userReducer
+	users: userReducer,
+	streams: steamReducer
 });

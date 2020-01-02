@@ -24,7 +24,7 @@ class SongsList extends React.Component {
 	}
 
 	render() {
-		console.log(this.props);
+		// console.log(this.props);
 		return (
 			<div className="ui container grid">
 				<div className="ui row">

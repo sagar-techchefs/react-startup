@@ -32,13 +32,13 @@ class ApprovalCard extends React.Component {
 								className="ui green basic button"
 								onClick={this.props.approved}
 							>
-								Approve
+								Confirm
 							</button>
 							<button
 								className="ui red basic button"
 								onClick={this.props.declined}
 							>
-								Decline
+								Cancel
 							</button>
 						</div>
 					</div>
