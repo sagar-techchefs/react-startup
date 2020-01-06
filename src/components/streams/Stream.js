@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import DataService from "../../contexts/DataService";
+// import DataService from "../../contexts/DataService";
 import Data from "../../contexts/Data";
 
 class Stream extends React.Component {
@@ -19,7 +19,10 @@ class Stream extends React.Component {
 	};
 
 	addActionButton() {
-		if (this.props.userId === this.props.currentUserId) {
+		if (
+			this.props.userId === 1 ||
+			this.props.userId === this.props.currentUserId
+		) {
 			return (
 				<Data.Consumer>
 					{color => (

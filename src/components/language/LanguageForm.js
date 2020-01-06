@@ -8,7 +8,7 @@ class LanguageForm extends React.Component {
 	render() {
 		let label = "Enter name";
 		let buttonText = "Save";
-		if (this.context.language != "English") {
+		if (this.context.language !== "English") {
 			label = "नाम";
 			buttonText = "सहेजें";
 		}

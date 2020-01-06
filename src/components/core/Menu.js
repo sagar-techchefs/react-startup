@@ -20,6 +20,7 @@ import GoogleApi from "./googleApi";
 import StreamsList from "../streams/StreamsList";
 import CreateStream from "../streams/CreateStream";
 import Language from "../language/Language";
+import Todo from "../todo/Todo";
 
 class Menu extends React.Component {
 	renderMenu() {
@@ -48,6 +49,13 @@ class Menu extends React.Component {
 							activeClassName="active"
 						>
 							Blog
+						</NavLink>
+						<NavLink
+							className="item"
+							to="/todo"
+							activeClassName="active"
+						>
+							Todos
 						</NavLink>
 						<NavLink
 							className="item"
@@ -143,6 +151,10 @@ class Menu extends React.Component {
 						<Route
 							path="/streams/edit/:id"
 							component={CreateStream}
+						/>
+						<Route
+							path="/todo"
+							component={Todo}
 						/>
 
 						{/* <Streams exact>

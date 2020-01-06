@@ -15,7 +15,7 @@ class LanguageChange extends React.Component {
 			<form className="ui form" onSubmit={this.handleSubmit}>
 				<p>
 					<label>
-						{selectedLanguage == "Hindi"
+						{selectedLanguage === "Hindi"
 							? "भाषा"
 							: "Select Language"}
 					</label>
@@ -24,7 +24,7 @@ class LanguageChange extends React.Component {
 				<div className="ui buttons">
 					<button
 						className={
-							selectedLanguage == "English"
+							selectedLanguage === "English"
 								? "ui positive button"
 								: "ui button"
 						}
@@ -39,7 +39,7 @@ class LanguageChange extends React.Component {
 					<div className="or"></div>
 					<button
 						className={
-							selectedLanguage == "Hindi"
+							selectedLanguage === "Hindi"
 								? "ui positive button"
 								: "ui button"
 						}
